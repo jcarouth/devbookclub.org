@@ -21,6 +21,6 @@ Each session is held via Google Plus Hangouts on Air on the official Dev Book Cl
 
 ## Code of Conduct
 
-Dev Book Club prides itself on being a resource for developers of all walks of life. Our group is open to anyone and everyone with a passion for technology and learning, regardless of gender, sexual orientation, disability, physical appearance, body size, race, religion, or preference for Vim, Emacs, or any other editor. To ensure everyone has an amazing experience, we, the organizers and hosts of Dev Book Club, will not tolerate any harassment or sexually charged language directed at any participants. Though we have yet to have any incidents, the organizers will deal with each situation on a case-by-case basis and reserve the right to expel offenders from the discussion and/or the group.
+Dev Book Club prides itself on being a resource for developers of all walks of life. Our group is open to anyone and everyone with a passion for technology and learning, regardless of gender, sexual orientation, disability, physical appearance, body size, race, religion, or preference for Vim, Emacs, or any other editor. To ensure everyone has an amazing experience, we, the organizers and hosts of Dev Book Club, will not tolerate any harassment or sexually charged language directed at any participants. The organizers will deal with each ovserved or reported situation on a case-by-case basis and reserve the right to expel offenders from the discussion and/or the group.
 
 For more information see our [full Code of Conduct](/code-of-conduct).

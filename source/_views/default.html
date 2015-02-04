@@ -60,10 +60,8 @@
                         <a class="brand" href="{{ site.url }}/">{{ site.title }}</a>
                         <div class="nav-collapse collapse">
                             <ul class="nav">
-                                <li><a href="{{ site.url }}/blog">Posts Archive</a></li>
-                                <li><a href="{{ site.url }}/blog/categories">Categories</a></li>
-                                <li><a href="{{ site.url }}/blog/tags">Tags</a></li>
                                 <li><a href="{{ site.url }}/about">About</a></li>
+                                <li><a href="{{ site.url }}/code-of-conduct">Code of Conduct</a></li>
                             </ul>
                         </div><!--/.nav-collapse -->
                     </div>
@@ -72,20 +70,8 @@
         </header>
         <div class="mainContent container">
             <div class="row-fluid">
-                <div class="span8">
+                <div class="span12">
                     {% block content_wrapper %}{% block content %}{% endblock %}{% endblock %}
-                </div>
-                <div class="span4 sidebar">
-                    <div class="well">
-                        <h4>{{ site.title }}{% if site.subtitle %} <small>{{ site.subtitle }}</small>{% endif %}</h4>
-                    </div>
-                    <div class="well sidebar-nav">
-                        <h4>Links</h4>
-                        <ul class="nav">
-                            <li><a href="http://sculpin.io">sculpin.io</a></li>
-                            <li><a href="http://twitter.com/getsculpin">@getsculpin</a></li>
-                        </ul>
-                    </div>
                 </div>
             </div>
         </div>
