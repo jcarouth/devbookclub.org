@@ -1,5 +1,5 @@
 ---
-use: ["posts"]
+use: ["discussions"]
 permalink: atom.xml
 ---
 <?xml version="1.0" encoding="utf-8"?>
@@ -16,13 +16,13 @@ permalink: atom.xml
         </author>
     {% endif %}
     <generator uri="http://sculpin.io/">Sculpin</generator>
-    {% for post in data.posts|slice(0, 10) %}
+    {% for discussion in data.discussions|slice(0, 10) %}
         <entry>
             <title type="html"><![CDATA[{{ post.title }}]]></title>
             <link href="{{ site.url }}{{ post.url }}"/>
-            <updated>{{ post.date|date('c') }}</updated>
-            <id>{{ site.url }}{{ post.url }}</id>
-            <content type="html"><![CDATA[{{ post.blocks.content|raw }}]]></content>
+            <updated>{{ discussion.date|date('c') }}</updated>
+            <id>{{ site.url }}{{ discussion.url }}</id>
+            <content type="html"><![CDATA[{{ discussion.blocks.content|raw }}]]></content>
         </entry>
     {% endfor %}
 </feed>

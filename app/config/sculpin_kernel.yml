@@ -1,3 +1,4 @@
 sculpin_content_types:
-    posts:
-        permalink: blog/:year/:month/:day/:filename/
+    discussions:
+        type: path
+        permalink: discussions/:basename/index.html

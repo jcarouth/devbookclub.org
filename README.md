@@ -1,29 +1,9 @@
-Sculpin Blog Skeleton
-=====================
+Dev Book Club
+=============
 
-A skeleton for a Sculpin based blog.
+The homepage for the Dev Book Club.
 
 Powered by [Sculpin](http://sculpin.io). =)
-
-
-Features
---------
-
-A very basic Sculpin based blog supporting the following features:
-
- * Very minimal Bootstrap based theme.
- * A handful of existing posts in `source/_posts/` to get you started. Feel
-   free to remove these when you are ready.
- * An about page at `/about`.
- * An index page at `/`. It displays all posts and paginates them.
- * A blog archive page at `/blog`. It displays post titles broken down by
-   month and is paginated.
- * A blog categories page at `/blog/categories`.
- * A blog category index at `/blog/categories/$category`. Similar to the blog
-   archive except broken down by each category.
- * A blog tags page at `/blog/tags`.
- * A blog tag index at `/blog/tags/$tag`. Similar to the blog archive
-   except broken down by each tag.
 
 
 Build

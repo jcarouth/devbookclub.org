@@ -1,9 +1,36 @@
 ---
-layout: default
+layout: layout
 title: Home
+generator: pagination
+pagination:
+    max_per_page: 4
+    provider: data.discussions
 use:
     - discussions
 ---
 <div id="discussions">
-    <img src="{{ site.url }}/images/logo-web-blue.png" />
+    <div class="row-fluid spacetop">
+        <div class="span12">
+            {% for discussion in page.pagination.items %}
+            <div class="blogbox">
+                <h1>{{ discussion.title }}</h1>
+                <p class="spacebot">
+                <span class="metablog"><i class="icon icon-calendar"></i> {{ discussion.date | date('M j, Y') }}</span>
+                <a href="http://amzn.com/{{ discussion.amazonid }}" class="metablog"><i class="icon icon-align-left"></i> {{ discussion.book }} </a>
+                </p>
+                <p>{{ discussion.blocks.content | raw }}</p>
+                <div class="discussion-video spacetop">
+                    <iframe width="560" height="315" src="//www.youtube.com/embed/{{ discussion.youtube_id }}" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+            {% endfor %}
+
+            {% if page.pagination.previous_page or page.pagination.next_page %}
+            <nav>
+                {% if page.pagination.previous_page %}<a href="{{ site.url }}{{ page.pagination.previous_page.url }}">Newer Discussions</a>{% endif %}<br />
+                {% if page.pagination.next_page %}<a href="{{ site.url }}{{ page.pagination.next_page.url }}">Previous Discussions</a>{% endif %}<br />
+            </nav>
+            {% endif %}
+        </div>
+    </div>
 </div>

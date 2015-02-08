@@ -1,6 +1,6 @@
 ---
-layout: default
-title: About | Dev Book Club
+layout: layout
+title: About
 
 ---
 # Dev Book Club
