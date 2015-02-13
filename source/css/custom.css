@@ -1497,3 +1497,12 @@ a:hover,a:focus {
 .smallspacetop {
 	margin-top: 10px;
 }
+#next-discussion h1 {
+  padding-bottom: 10px;
+  margin-bottom: 24px;
+  border-bottom: medium double #696969;
+}
+
+#next-discussion p {
+  margin-top: 24px;
+}
