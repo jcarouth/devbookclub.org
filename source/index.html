@@ -20,7 +20,7 @@ use:
                 </p>
                 <p>{{ discussion.blocks.content | raw }}</p>
                 <div class="discussion-video spacetop">
-                    <iframe width="560" height="315" src="//www.youtube.com/embed/{{ discussion.youtube_id }}" frameborder="0" allowfullscreen></iframe>
+                    <iframe class="youTubeVideo" height="315" src="//www.youtube.com/embed/{{ discussion.youtube_id }}" frameborder="0" allowfullscreen></iframe>
                 </div>
             </div>
             {% endfor %}

@@ -767,8 +767,11 @@ ul.social-links>li.pinterest-link:hover {
 	list-style:none
 }
 .vuzz-pricing-table>div {
+	/*
+	// Not valid CSS, and overwritten below in any case
 	border-top:#666;
 	3px solid;
+	*/
 	margin-right:2%;
 	list-style:none;
 	text-shadow:none;
@@ -1496,4 +1499,20 @@ a:hover,a:focus {
 }
 .smallspacetop {
 	margin-top: 10px;
+}
+
+@media (max-width: 320px) {
+
+	.youTubeVideo{
+		max-width:100%;
+	}
+
+}
+
+@media (max-width: 768px) {
+
+	.youTubeVideo{
+		max-width:560px;
+	}
+
 }
