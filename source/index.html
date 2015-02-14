@@ -19,8 +19,8 @@ use:
                 <a href="http://amzn.com/{{ discussion.amazonid }}" class="metablog"><i class="icon icon-align-left"></i> {{ discussion.book }} </a>
                 </p>
                 <p>{{ discussion.blocks.content | raw }}</p>
-                <div class="discussion-video spacetop">
-                    <iframe class="youTubeVideo" height="315" src="//www.youtube.com/embed/{{ discussion.youtube_id }}" frameborder="0" allowfullscreen></iframe>
+                <div class="discussion-video spacetop youTubeVideo">
+                    <iframe height="315" src="//www.youtube.com/embed/{{ discussion.youtube_id }}" frameborder="0" allowfullscreen></iframe>
                 </div>
             </div>
             {% endfor %}
