@@ -35,8 +35,8 @@ use:
                 <a href="http://amzn.com/{{ discussion.amazonid }}" class="metablog"><i class="icon icon-align-left"></i> {{ discussion.book }} </a>
                 </p>
                 <p>{{ discussion.blocks.content | raw }}</p>
-                <div class="discussion-video spacetop">
-                    <iframe width="560" height="330" style="border:0px;" src="//www.youtube.com/embed/{{ discussion.youtube_id }}" frameborder="0" allowfullscreen></iframe>
+                <div class="discussion-video spacetop youTubeVideo">
+                    <iframe height="330" src="//www.youtube.com/embed/{{ discussion.youtube_id }}" frameborder="0" allowfullscreen></iframe>
                 </div>
             </div>
             {% endfor %}
