@@ -9,7 +9,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "devbookclub-blue": '#EDFBFF'
+        "devbookclub-blue": '#EDFBFF',
+        "devbookclub-blue-dark": "#0C5179"
       }
     },
   },

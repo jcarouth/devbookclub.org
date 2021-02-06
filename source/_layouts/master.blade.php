@@ -44,16 +44,5 @@
         <main class="flex-auto" role="main">
             @yield('body')
         </main>
-
-        <footer class="py-3 text-center text-sm">
-            <div class="">
-                <div class="inline-block mx-2">
-                    <a class="" href="https://twitter.com/@_devbookclub" rel="noopener" target="_blank" aria-label="Follow @_devbookclub on Twitter">Twitter</a>
-                </div>
-                <div class="inline-block mx-2">
-                    <a href="https://www.youtube.com/user/devbookclub" aria-label="Subscribe to DevBookClub on YouTube" rel="noopener" target="_blank">YouTube</a>
-                </div>
-            </div>
-        </footer>
     </body>
 </html>
