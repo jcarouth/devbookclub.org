@@ -1,8 +1,13 @@
-/.sculpin/
-/app/cache/*
-/app/config/sculpin_kernel_*.yml
-/app/config/sculpin_site_*.yml
-/app/logs/*
-/output_*/
-/source/components/
-s3.conf
+/build_local/
+/cache/
+/node_modules/
+/vendor/
+/.idea/
+/.vscode/
+npm-debug.log
+yarn-error.log
+
+# Optional ignores
+# /build_staging/
+# /build_production/
+# /source/assets/build/

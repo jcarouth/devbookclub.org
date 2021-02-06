@@ -1,4 +1,0 @@
-sculpin_content_types:
-    discussions:
-        type: path
-        permalink: discussions/:basename/index.html
