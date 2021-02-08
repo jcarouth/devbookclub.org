@@ -1,6 +1,8 @@
 <?php
 
+use Illuminate\Support\Str;
 use TightenCo\Jigsaw\Jigsaw;
+use samdark\sitemap\Sitemap;
 
 /** @var $container \Illuminate\Container\Container */
 /** @var $events \TightenCo\Jigsaw\Events\EventBus */
@@ -15,3 +17,26 @@ use TightenCo\Jigsaw\Jigsaw;
  *     // Your code here
  * });
  */
+$events->afterBuild(function (Jigsaw $jigsaw) {
+    $excludes = [
+        '/assets/*',
+        '/android-chrome-192x192.png',
+        '/android-chrome-512x512.png',
+        '/apple-touch-icon.png',
+        '*/favicon.ico',
+        '*/favicon*.png',
+        '*/404.html',
+        '/site.webmanifest',
+    ];
+
+    $baseUrl = $jigsaw->getConfig('baseUrl');
+    $sitemap = new Sitemap($jigsaw->getDestinationPath() . '/sitemap.xml');
+
+    collect($jigsaw->getOutputPaths())
+        ->reject(fn ($path) => Str::is($excludes, $path))
+        ->each(function ($path) use ($baseUrl, $sitemap) {
+            $sitemap->addItem(rtrim($baseUrl, '/') . $path, time(), Sitemap::DAILY);
+        });
+
+    $sitemap->write();
+});
