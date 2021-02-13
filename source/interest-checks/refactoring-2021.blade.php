@@ -6,7 +6,7 @@
         <p>
             This is an interest check form. If you are interested, fill it out and submit it.
         </p>
-        <form class="block mt-8 grid grid-cols-1 gap-6" method="post" data-netlify="true">
+        <form class="block mt-8 grid grid-cols-1 gap-6" name="interest-checks/refactoring-2021" method="post" data-netlify="true">
             <label class="block" for="name">Name:
             <input class="block mt-1 w-full" type="text" name="name">
             </label>
