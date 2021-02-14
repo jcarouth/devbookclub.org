@@ -40,9 +40,35 @@
         </script>
         @endif
     </head>
-    <body class="flex flex-col min-h-screen bg-devbookclub-blue font-sans antialiased" style="color: #0C5179;">
+    <body class="flex flex-col min-h-screen bg-gray-100 font-sans antialiased text-gray-800">
+        <header>
+            <div class="container flex flex-row justify-between md:px-3 mx-auto p-3">
+                <a class="flex-grow" href="/">
+                    <svg class="w-48 h-12">
+                        <title>Dev Book Club</title>
+                        <use xlink:href="/assets/build/icons/spritemap.svg#sprite-wordmark-dbc"></use>
+                    </svg>
+                </a>
+                <span class="flex-none w-12 py-2">
+                    <svg class="w-4 h-4 ml-auto fill-current hidden">
+                        <use xlink:href="/assets/build/icons/spritemap.svg#sprite-bars"></use>
+                    </svg>
+                </span>
+            </div>
+        </header>
         <main class="flex-auto" role="main">
             @yield('body')
         </main>
+        <footer class="container p-3 mx-auto text-center">
+            <div>
+                <a class="inline-block w-10 mx-2" href="https://twitter.com/@_devbookclub" rel="noopener" target="_blank" aria-label="Follow @_devbookclub on Twitter">
+                    <svg class="w-10 h-10 fill-current"><use xlink:href="/assets/build/icons/spritemap.svg#sprite-twitter"></use></svg>
+                </a>
+                <a class="inline-block w-10 mx-2" href="https://www.youtube.com/user/devbookclub" aria-label="Subscribe to DevBookClub on YouTube" rel="noopener" target="_blank">
+                    <svg class="w-10 h-10 fill-current"><use xlink:href="/assets/build/icons/spritemap.svg#sprite-youtube"></use></svg>
+                </a>
+            </div>
+            <div>Copyright &copy; 2020 Dev Book Club</div>
+        </footer>
     </body>
 </html>
