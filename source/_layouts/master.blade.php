@@ -59,7 +59,7 @@
         <main class="flex-auto" role="main">
             @yield('body')
         </main>
-        <footer class="container p-3 mx-auto text-center">
+        <footer class="container p-3 mt-8 mx-auto text-center">
             <div>
                 <a class="inline-block w-10 mx-2" href="https://twitter.com/@_devbookclub" rel="noopener" target="_blank" aria-label="Follow @_devbookclub on Twitter">
                     <svg class="w-10 h-10 fill-current"><use xlink:href="/assets/build/icons/spritemap.svg#sprite-twitter"></use></svg>
