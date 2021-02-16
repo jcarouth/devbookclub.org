@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ $page->language ?? 'en' }}">
     <head>
-        <title>{{ $page->title }}</title>
+        <title>{{ $page->title ?  $page->title . ' | ' : '' }}{{ $page->siteName }}</title>
 
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">

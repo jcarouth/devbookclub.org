@@ -1,3 +1,6 @@
+---
+title: Thank you!
+---
 @extends('_layouts.master')
 
 @section('body')

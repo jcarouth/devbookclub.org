@@ -1,3 +1,6 @@
+---
+title: Join the discussion
+---
 @extends('_layouts.master')
 
 @section('body')
