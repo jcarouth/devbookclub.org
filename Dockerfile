@@ -6,16 +6,16 @@ RUN curl -sL https://deb.nodesource.com/setup_14.x | bash - \
     git \
     nginx \
     nodejs \
-    php8.0-bcmath \
-    php8.0-cli \
-    php8.0-common \
-    php8.0-curl \
-    php8.0-gd \
-    php8.0-imagick \
-    php8.0-intl \
-    php8.0-mbstring \
-    php8.0-xml \
-    php8.0-zip \
+    php7.4-bcmath \
+    php7.4-cli \
+    php7.4-common \
+    php7.4-curl \
+    php7.4-gd \
+    php7.4-imagick \
+    php7.4-intl \
+    php7.4-mbstring \
+    php7.4-xml \
+    php7.4-zip \
     zip \
     unzip
 
