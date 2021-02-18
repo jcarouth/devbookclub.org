@@ -12,3 +12,6 @@ yarn-error.log
 # /build_production/
 /source/assets/build/
 /source/assets/build/icons/spritemap.svg
+
+# Local Netlify folder
+.netlify

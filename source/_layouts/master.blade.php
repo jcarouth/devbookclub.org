@@ -59,6 +59,9 @@
         <main class="flex-auto" role="main">
             @yield('body')
         </main>
+        <aside>
+            @include('_components.newsletter-inline')
+        </aside>
         <footer class="container p-3 mt-8 mx-auto text-center">
             <div>
                 <a class="inline-block w-10 mx-2" href="https://twitter.com/@_devbookclub" rel="noopener" target="_blank" aria-label="Follow @_devbookclub on Twitter">
@@ -70,5 +73,7 @@
             </div>
             <div>Copyright &copy; 2020 Dev Book Club</div>
         </footer>
+
+        <script src="{{ mix('js/main.js', 'assets/build') }}"></script>
     </body>
 </html>
