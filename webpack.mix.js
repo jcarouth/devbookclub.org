@@ -34,4 +34,5 @@ mix.jigsaw()
       )
     ]
   })
+  .sourceMaps()
   .version();
