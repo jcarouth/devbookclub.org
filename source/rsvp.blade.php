@@ -16,7 +16,7 @@ title: RSVP for DevBookClub Meet & Greet
     </p>
 
     <div x-data="meetandgreets()" class="mt-10">
-        <form x-ref="meetandgreetsForm" name="meetandgreets-rsvps" data-netlify="true" method="post" action="/thanks">
+        <form x-ref="meetandgreetsForm" name="meetandgreets-rsvps" data-netlify="true" method="post" action="/pages/thanks/">
             <label>Name: *</label>
             <input x-model="name" class="block w-full lg:w-1/2 mt-1 px-2 py-1 border border-gray-900" type="text" name="name" required>
 

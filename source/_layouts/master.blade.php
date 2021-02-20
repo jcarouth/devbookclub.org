@@ -48,8 +48,8 @@
         <script defer src="{{ mix('js/main.js', 'assets/build') }}"></script>
     </head>
     <body class="flex flex-col min-h-screen bg-white font-sans antialiased text-gray-800">
-        <header>
-            <div class="container flex flex-row justify-between md:px-3 mx-auto p-3">
+        <header class="bg-gray-50">
+            <div class="container mx-auto py-3 flex flex-row justify-between">
                 <a class="flex-grow" href="/">
                     <svg class="w-48 h-12">
                         <title>Dev Book Club</title>
@@ -63,6 +63,15 @@
                 </span>
             </div>
         </header>
+
+        <nav class="py-3 bg-gradient-to-b from-gray-900 to-gray-700 text-lg text-white">
+            <div class="container mx-auto flex space-x-6">
+                <a href="/">Home</a>
+                <a href="/rsvp/">RSVP</a>
+                <a href="/pages/about/">About</a>
+                <a href="/pages/code-of-conduct/">Code of Conduct</a>
+            </div>
+        </nav>
 
         <main class="h-full mb-auto" role="main">
             @yield('body')

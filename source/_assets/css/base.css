@@ -1,0 +1,46 @@
+.md-content h1,
+.md-content h2,
+.md-content h3 {
+  @apply mt-10;
+}
+
+.md-content h1 {
+  @apply text-4xl;
+}
+
+.md-content h2 {
+  @apply text-3xl;
+}
+
+.md-content h3 {
+  @apply text-4xl;
+}
+
+.md-content hr {
+  @apply border-b;
+  @apply border-gray-100;
+  @apply my-10;
+  @apply rounded-full;
+}
+
+.md-content ul,
+.md-content ol {
+  @apply mt-10;
+  @apply pl-12;
+}
+
+.md-content ul {
+  @apply list-disc;
+}
+
+.md-content ol {
+  @apply list-decimal;
+}
+
+.md-content p {
+  @apply mt-10;
+}
+
+.md-content a {
+  @apply underline;
+}
