@@ -28,6 +28,12 @@
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
         <link rel="manifest" href="/site.webmanifest">
 
+        <style>
+            [x-cloak] {
+                display: none !important;
+            }
+        </style>
+
         @if ($page->production)
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-1FKR7ZQZRH"></script>
@@ -39,8 +45,9 @@
             gtag('config', 'G-1FKR7ZQZRH');
         </script>
         @endif
+        <script defer src="{{ mix('js/main.js', 'assets/build') }}"></script>
     </head>
-    <body class="flex flex-col min-h-screen bg-gray-100 font-sans antialiased text-gray-800">
+    <body class="flex flex-col min-h-screen bg-white font-sans antialiased text-gray-800">
         <header>
             <div class="container flex flex-row justify-between md:px-3 mx-auto p-3">
                 <a class="flex-grow" href="/">
@@ -56,24 +63,28 @@
                 </span>
             </div>
         </header>
-        <main class="flex-auto" role="main">
+
+        <main class="h-full mb-auto" role="main">
             @yield('body')
         </main>
-        <aside>
+
+        <aside class="mt-10 lg:mt-24 bg-gradient-to-b from-gray-600 to-gray-900">
             @include('_components.newsletter-inline')
         </aside>
-        <footer class="container p-3 mt-8 mx-auto text-center">
-            <div>
-                <a class="inline-block w-10 mx-2" href="https://twitter.com/@_devbookclub" rel="noopener" target="_blank" aria-label="Follow @_devbookclub on Twitter">
-                    <svg class="w-10 h-10 fill-current"><use xlink:href="/assets/build/icons/spritemap.svg#sprite-twitter"></use></svg>
-                </a>
-                <a class="inline-block w-10 mx-2" href="https://www.youtube.com/user/devbookclub" aria-label="Subscribe to DevBookClub on YouTube" rel="noopener" target="_blank">
-                    <svg class="w-10 h-10 fill-current"><use xlink:href="/assets/build/icons/spritemap.svg#sprite-youtube"></use></svg>
-                </a>
-            </div>
-            <div>Copyright &copy; 2020 Dev Book Club</div>
-        </footer>
 
-        <script src="{{ mix('js/main.js', 'assets/build') }}"></script>
+        <footer class="bg-gray-900 text-white">
+            <hr class="container mx-auto mt-8 border-gray-500">
+            <div class="container mx-auto py-8 lg:flex lg:items-center lg:justify-between space-y-6">
+                <div class="space-x-6 flex items-center justify-center lg:order-2">
+                    <a class="" href="https://twitter.com/@_devbookclub" rel="noopener" target="_blank" aria-label="Follow @_devbookclub on Twitter">
+                        <svg class="w-6 h-6 fill-current"><use xlink:href="/assets/build/icons/spritemap.svg#sprite-twitter"></use></svg>
+                    </a>
+                    <a class="" href="https://www.youtube.com/user/devbookclub" aria-label="Subscribe to DevBookClub on YouTube" rel="noopener" target="_blank">
+                        <svg class="w-6 h-6 fill-current"><use xlink:href="/assets/build/icons/spritemap.svg#sprite-youtube"></use></svg>
+                    </a>
+                </div>
+                <p class="lg:order-1 text-center">Copyright &copy; 2020 Dev Book Club. All rights reserved.</p>
+            </div>
+        </footer>
     </body>
 </html>
