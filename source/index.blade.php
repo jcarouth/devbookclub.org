@@ -8,7 +8,7 @@
         <img class="mx-auto w-80 lg:w-full" src="/assets/images/never-stop-learning-hero.png" alt="Motivational quote Never stop learning" width="1280" height="720" loading="lazy">
     </div>
 
-    <div class="max-w-7xl mx-auto mt-10 flex flex-col lg:flex-row lg:space-x-4">
+    <div class="max-w-7xl mx-auto mt-10 lg:mt-24 lg:flex lg:flex-row lg:space-x-4">
         <div class="lg:w-1/2 px-3 py-6">
             <h2 class="text-3xl uppercase font-bold">Rebooting...</h2>
 
