@@ -66,8 +66,8 @@
 
         <nav class="py-3 bg-gradient-to-b from-gray-900 to-gray-700 text-lg text-white">
             <div class="container mx-auto flex space-x-6">
-                <a href="/">Home</a>
                 <a href="/rsvp/">RSVP</a>
+                <a href="/pages/scholarship/">Scholarship</a>
                 <a href="/pages/about/">About</a>
                 <a href="/pages/code-of-conduct/">Code of Conduct</a>
             </div>

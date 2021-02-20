@@ -13,7 +13,7 @@
 }
 
 .md-content h3 {
-  @apply text-4xl;
+  @apply text-2xl;
 }
 
 .md-content hr {
