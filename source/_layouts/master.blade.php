@@ -49,7 +49,7 @@
     </head>
     <body class="flex flex-col min-h-screen bg-white font-sans antialiased text-gray-800">
         <header class="bg-gray-50">
-            <div class="container mx-auto py-3 flex flex-row justify-between">
+            <div class="container mx-auto px-3 py-3 flex flex-row justify-between">
                 <a class="flex-grow" href="/">
                     <svg class="w-48 h-12">
                         <title>Dev Book Club</title>
@@ -65,7 +65,7 @@
         </header>
 
         <nav class="py-3 bg-gradient-to-b from-gray-900 to-gray-700 text-lg text-white">
-            <div class="container mx-auto flex space-x-6">
+            <div class="container mx-auto px-3 flex flex-col md:flex-row space-y-1 md:space-y-0 md:space-x-6">
                 <a href="/rsvp/">RSVP</a>
                 <a href="/pages/scholarship/">Scholarship</a>
                 <a href="/pages/about/">About</a>
@@ -81,7 +81,7 @@
             @include('_components.newsletter-inline')
         </aside>
 
-        <footer class="bg-gray-900 text-white">
+        <footer class="lg:px-3 bg-gray-900 text-white">
             <hr class="container mx-auto mt-8 border-gray-500">
             <div class="container mx-auto py-8 lg:flex lg:items-center lg:justify-between space-y-6">
                 <div class="space-x-6 flex items-center justify-center lg:order-2">
@@ -92,7 +92,7 @@
                         <svg class="w-6 h-6 fill-current"><use xlink:href="/assets/build/icons/spritemap.svg#sprite-youtube"></use></svg>
                     </a>
                 </div>
-                <p class="lg:order-1 text-center">Copyright &copy; 2020 Dev Book Club. All rights reserved.</p>
+                <p class="lg:order-1 text-center lg:text-left">Copyright &copy; 2020 Dev Book Club. All rights reserved.</p>
             </div>
         </footer>
     </body>
