@@ -2,3 +2,8 @@
 command = "npm run prod"
 publish = "build_production"
 environment = { PHP_VERSION = "7.4" }
+
+[[redirects]]
+from = "/meet-and-greet/"
+to = "/rsvp/"
+status = 301

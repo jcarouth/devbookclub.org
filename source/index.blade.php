@@ -17,7 +17,7 @@
             </p>
 
             <div class="w-5/6 mt-8 mx-auto border-2 border-gray-900 font-bold px-3 py-1 rounded-2xl text-xl">
-                <a href="/join">Join the Conversation</a>
+                <a href="/join/">Join the Conversation</a>
             </div>
         </div>
         <div class="lg:w-1/2 mt-10 lg:mt-0 px-3 py-6 rounded-2xl bg-gray-600 text-white">
@@ -29,7 +29,7 @@
             </p>
 
             <div class="w-5/6 mt-8 mx-auto border-2 border-white font-bold px-3 py-1 rounded-2xl text-xl">
-                <a href="/meet-and-greet/">RSVP to an upcoming Meet & Greet</a>
+                <a href="/rsvp/">RSVP to an upcoming Meet & Greet</a>
             </div>
         </div>
     </div>
