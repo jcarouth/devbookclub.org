@@ -1,5 +1,5 @@
 <div x-data="newsletter()" x-init="init()" class="mt-8 py-4 text-center text-white">
-    <form action="https://api.convertkit.com/v3/forms/2046384/subscribe" method="post" class="max-w-3xl mx-auto px-3">
+    <form action="/" method="post" class="max-w-3xl mx-auto px-3">
         <div class="text-xl">Subscribe to our Newsletter</div>
         <div class="mt-3">Get notified of upcoming discussions, recaps, and more by email.</div>
         <div x-cloak x-show="result" x-text="result" :class="{'text-red-500': !isSuccess}" class="mt-3"></div>

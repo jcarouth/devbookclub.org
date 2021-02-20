@@ -12,7 +12,7 @@ title: Join the discussion
     </p>
 
     <div class="mt-10">
-        <form data-netlify="true" name="join-refactoring" action="/thanks" method="post">
+        <form data-netlify="true" name="join-refactoring" action="/pages/thanks/" method="post">
             <label class="block"><strong>Name *</strong>
                 <input class="block w-full lg:w-1/2 mt-1 px-2 py-1 border border-gray-900" type="text" name="name" required>
             </label>
