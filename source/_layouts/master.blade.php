@@ -12,17 +12,13 @@
 
         <meta property="og:site_name" content="Dev Book Club">
         <meta property="og:url" content="{{ $page->getUrl() }}">
-        <meta property="og:title" content="{{ $page->title }}">
+        <meta property="og:title" content="{{ $page->title ?? $page->siteName }}">
         <meta property="og:description" content="{{ $page->description }}">
 
         <meta property="twitter:card" content="summary_large_image">
         <meta property="twitter:site" content="@_devbookclub">
         <meta property="twitter:creator" content="@_devbookclub">
-        @if(isset($page->twitter_image)) {
-        <meta property="twitter:image" content="{{ $page->twitter_image }}">
-        @else
-        <meta property="twitter:image" content="{{ $page->baseUrl }}/assets/images/static/devbookclub-twitter-large.png">
-        @endif
+        <meta property="twitter:image" content="{{ $page->baseUrl }}/assets/images/static/{{ $page->twitter_image ?? 'devbookclub-twitter-large.png' }}">
 
         <link rel="canonical" href="{{ $page->getUrl() }}">
         <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
@@ -99,7 +95,7 @@
                         <svg class="w-6 h-6 fill-current"><use xlink:href="/assets/build/icons/spritemap.svg#sprite-youtube"></use></svg>
                     </a>
                 </div>
-                <p class="lg:order-1 text-center lg:text-left">Copyright &copy; 2020 Dev Book Club. All rights reserved.</p>
+                <p class="lg:order-1 text-center lg:text-left">&copy; {{ date('Y') }} Dev Book Club. All rights reserved.</p>
             </div>
         </footer>
     </body>
