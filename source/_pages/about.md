@@ -1,8 +1,9 @@
 ---
 extends: _layouts.page
-title: About the Dev Book Club
-slug: about
 section: page-content
+slug: about
+title: About the Dev Book Club
+description: The Dev Book Club is an opportunity to learn with developers around the world by reading and discussing technical books.
 ---
 The Dev Book Club is an opportunity to learn with developers from around the world by reading and discussing technical books. The group was founded in 2014 by [Jeff Carouth](https://twitter.com/jcarouth) as a way to discuss a particular book, but the goal is to expand the reach through multiple groups at a time.
 

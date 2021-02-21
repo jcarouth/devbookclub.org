@@ -1,6 +1,7 @@
 ---
 extends: _layouts.page
 title: Code of Conduct
+description: The Dev Book Club is open to anyone and everyone with a passion for technology and learning. Abusive behavior will not be tolerated.
 slug: code-of-conduct
 section: page-content
 ---

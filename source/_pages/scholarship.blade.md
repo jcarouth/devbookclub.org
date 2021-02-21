@@ -1,6 +1,7 @@
 ---
 extends: _layouts.page
 title: Dev Book Club Scholarship
+description: The Dev Book Club offers a scholarship for one participant to receive a copy of the book the group is discussing.
 slug: scholarship
 section: page-content
 ---

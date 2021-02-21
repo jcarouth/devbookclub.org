@@ -15,10 +15,14 @@
         <meta property="og:title" content="{{ $page->title }}">
         <meta property="og:description" content="{{ $page->description }}">
 
-        <meta property="twitter:card" content="summary">
+        <meta property="twitter:card" content="summary_large_image">
         <meta property="twitter:site" content="@_devbookclub">
         <meta property="twitter:creator" content="@_devbookclub">
-        <meta property="twitter:image" content="{{ $page->baseUrl }}/assets/images/logo-web-blue.png">
+        @if(isset($page->twitter_image)) {
+        <meta property="twitter:image" content="{{ $page->twitter_image }}">
+        @else
+        <meta property="twitter:image" content="{{ $page->baseUrl }}/assets/images/static/devbookclub-twitter-large.png">
+        @endif
 
         <link rel="canonical" href="{{ $page->getUrl() }}">
         <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
@@ -27,6 +31,9 @@
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
         <link rel="manifest" href="/site.webmanifest">
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#2b5797">
+        <meta name="theme-color" content="#fafafa">
 
         <style>
             [x-cloak] {

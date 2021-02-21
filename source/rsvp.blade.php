@@ -1,5 +1,6 @@
 ---
 title: RSVP for DevBookClub Meet & Greet
+description: RSVP for an upcoming DevBookClub meeting or discussion.
 ---
 @extends('_layouts.master')
 
