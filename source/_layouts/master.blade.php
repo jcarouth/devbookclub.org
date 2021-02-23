@@ -52,7 +52,7 @@
     </head>
     <body class="flex flex-col min-h-screen bg-white font-sans antialiased text-gray-800">
         <header class="bg-gray-50">
-            <div class="container mx-auto px-3 py-3 flex flex-row justify-between">
+            <div class="container max-w-6xl mx-auto px-3 py-3 flex flex-row justify-between">
                 <a class="flex-grow" href="/">
                     <svg class="w-48 h-12">
                         <title>Dev Book Club</title>
@@ -68,7 +68,7 @@
         </header>
 
         <nav class="py-3 bg-gradient-to-b from-gray-900 to-gray-700 text-lg text-white">
-            <div class="container mx-auto px-3 flex flex-col md:flex-row space-y-1 md:space-y-0 md:space-x-6">
+            <div class="container max-w-6xl mx-auto px-3 flex flex-col md:flex-row space-y-1 md:space-y-0 md:space-x-6">
                 <a href="/rsvp/">RSVP</a>
                 <a href="/pages/scholarship/">Scholarship</a>
                 <a href="/pages/about/">About</a>
@@ -77,7 +77,9 @@
         </nav>
 
         <main class="h-full mb-auto" role="main">
-            @yield('body')
+            <div class="container max-w-6xl mx-auto py-8 px-3">
+                @yield('body')
+            </div>
         </main>
 
         <aside class="mt-10 lg:mt-24 bg-gradient-to-b from-gray-600 to-gray-900">
@@ -85,8 +87,8 @@
         </aside>
 
         <footer class="lg:px-3 bg-gray-900 text-white">
-            <hr class="container mx-auto mt-8 border-gray-500">
-            <div class="container mx-auto py-8 lg:flex lg:items-center lg:justify-between space-y-6">
+            <hr class="container max-w-6xl mx-auto mt-8 border-gray-500">
+            <div class="container max-w-6xl mx-auto py-8 lg:flex lg:items-center lg:justify-between space-y-6">
                 <div class="space-x-6 flex items-center justify-center lg:order-2">
                     <a class="" href="https://twitter.com/@_devbookclub" rel="noopener" target="_blank" aria-label="Follow @_devbookclub on Twitter">
                         <svg class="w-6 h-6 fill-current"><use xlink:href="/assets/build/icons/spritemap.svg#sprite-twitter"></use></svg>
