@@ -11,7 +11,7 @@ window.meetandgreets = function () {
       {
         id: '20210302-1830',
         title: 'Tuesday, Mar 2',
-        time: '6:30 p.m. CT (-06:00)'
+        time: '6:00 p.m. CT (-06:00)'
       },
       {
         id: '20210303-1900',
