@@ -90,7 +90,7 @@
             <hr class="container max-w-6xl mx-auto mt-8 border-gray-500">
             <div class="container max-w-6xl mx-auto py-8 lg:flex lg:items-center lg:justify-between space-y-6">
                 <div class="space-x-6 flex items-center justify-center lg:order-2">
-                    <a class="" href="https://twitter.com/@_devbookclub" rel="noopener" target="_blank" aria-label="Follow @_devbookclub on Twitter">
+                    <a class="" href="https://twitter.com/_devbookclub" rel="noopener" target="_blank" aria-label="Follow @_devbookclub on Twitter">
                         <svg class="w-6 h-6 fill-current"><use xlink:href="/assets/build/icons/spritemap.svg#sprite-twitter"></use></svg>
                     </a>
                     <a class="" href="https://www.youtube.com/user/devbookclub" aria-label="Subscribe to DevBookClub on YouTube" rel="noopener" target="_blank">
