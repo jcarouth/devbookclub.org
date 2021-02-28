@@ -54,8 +54,8 @@
     </head>
     <body class="flex flex-col min-h-screen bg-white font-sans antialiased text-gray-800">
         <header x-data="{ navOpen: false}" class="bg-gradient-to-b from-gray-900 to-gray-700 text-white">
-            <div class="container flex max-w-6xl mx-auto px-3 py-3">
-                <div class="flex-grow">
+            <div class="container flex max-w-6xl mx-auto px-3 py-3 items-center">
+                <div class="flex-shrink-0">
                     <a class="flex space-x-2" href="/">
                         <svg class="w-8 h-8 fill-current">
                             <title class="sr-only">Dev Book Club</title>
@@ -64,18 +64,21 @@
                         <div class="my-auto font-brand text-3xl tracking-wide">Dev Book Club</div>
                     </a>
                 </div>
-                <nav class="hidden md:flex md:flex-row space-x-6">
-                    <a class="text-sm uppercase leading-9" href="/rsvp/">RSVP</a>
-                    <a class="text-sm uppercase leading-9" href="/pages/scholarship/">Scholarship</a>
-                    <a class="text-sm uppercase leading-9" href="/pages/about/">About</a>
-                    <a class="text-sm uppercase leading-9" href="/pages/code-of-conduct/">Code of Conduct</a>
-                </nav>
-                <span @click="navOpen = !navOpen" class="my-auto md:hidden">
-                    <svg class="w-4 h-4 ml-auto fill-current">
-                        <use x-show="navOpen === false" xlink:href="/assets/build/icons/spritemap.svg#sprite-bars"></use>
-                        <use x-cloak x-show="navOpen === true" xlink:href="/assets/build/icons/spritemap.svg#sprite-times"></use>
-                    </svg>
-                </span>
+                <div class="flex-grow">
+                    <nav class="hidden md:flex md:flex-row justify-end space-x-6">
+                        <a class="text-sm uppercase leading-9" href="/rsvp/">RSVP</a>
+                        <a class="text-sm uppercase leading-9" href="/pages/scholarship/">Scholarship</a>
+                        <a class="text-sm uppercase leading-9" href="/pages/about/">About</a>
+                        <a class="text-sm uppercase leading-9" href="/pages/code-of-conduct/">Code of Conduct</a>
+                    </nav>
+                    <span @click="navOpen = !navOpen" class="my-auto md:hidden">
+                        <svg class="w-4 h-4 ml-auto fill-current">
+                            <use x-show="navOpen === false" xlink:href="/assets/build/icons/spritemap.svg#sprite-bars"></use>
+                            <use x-cloak x-show="navOpen === true" xlink:href="/assets/build/icons/spritemap.svg#sprite-times"></use>
+                        </svg>
+                    </span>
+                </div>
+
             </div>
 
             <div x-cloak x-show="navOpen === true" class="px-5 py-3 flex flex-col space-y-2 text-lg">
