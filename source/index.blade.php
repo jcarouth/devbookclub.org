@@ -37,7 +37,7 @@
         <h2 class="mt-12 pb-2 text-2xl font-semibold border-b-2 border-gray-300">Books We Discuss</h2>
         <div class="mt-8 grid gap-16 lg:grid-cols-2 lg:gap-x-5 lg:gap-y-12">
             <div class="flex flex-row">
-                <img class="w-24" src="/assets/images/books/covers/refactoring-second-cover-sm.jpg">
+                <img class="w-24 self-start" src="/assets/images/books/covers/refactoring-second-cover-sm.jpg">
                 <div class="w-full px-3">
                     <div class="text-xl font-semibold">Refactoring (2nd Edition)</div>
                     <span class="font-serif">by Martin Fowler</span>
@@ -45,7 +45,7 @@
                 </div>
             </div>
             <div class="flex flex-row">
-                <img class="w-24" src="/assets/images/books/covers/clean-code-cover-sm.jpg">
+                <img class="w-24 self-start" src="/assets/images/books/covers/clean-code-cover-sm.jpg">
                 <div class="w-full px-3">
                     <div class="text-xl font-semibold">Clean Code</div>
                     <span class="font-serif">by Robert Martin</span>
@@ -55,7 +55,7 @@
                 </div>
             </div>
             <div class="flex flex-row">
-                <img class="w-24" src="/assets/images/books/covers/iddd-cover-sm.jpg">
+                <img class="w-24 self-start" src="/assets/images/books/covers/iddd-cover-sm.jpg">
                 <div class="w-full px-3">
                     <div class="text-xl font-semibold">Implementing Domain Driven Design</div>
                     <span class="font-serif">by Vaughn Vernon</span>
