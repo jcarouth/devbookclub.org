@@ -5,7 +5,7 @@
         <div x-cloak x-show="result" x-text="result" :class="{'text-red-500': !isSuccess}" class="mt-3"></div>
         <div class="flex items-end mt-3 mx-auto space-x-2 w-3/4">
             <input x-model="formData.email" name="email" type="email" placeholder="Your Email" class="w-4/6 py-1 px-2 text-gray-800">
-            <button @click.prevent="submit()" :disabled="isLoading" class="w-2/6 py-1 bg-gray-500 rounded-2xl text-white">
+            <button @click.prevent="submit()" :disabled="isLoading" class="w-2/6 py-1 bg-gray-500 rounded-md text-white">
                 <span x-cloak x-show="isLoading">Loading...</span>
                 <span x-show="!isLoading">Subscribe</span>
             </button>

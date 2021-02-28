@@ -42,7 +42,7 @@ description: RSVP for an upcoming DevBookClub meeting or discussion.
 
             <div class="mt-8">
                 <div x-cloak x-show="resultText != ''" x-text="resultText" :class="{'text-red-500': error}" class="mt-8"></div>
-                <button @click.prevent="submit()" class="block mr-auto mt-8 px-10 py-1 rounded-2xl bg-gray-500 text-lg text-white">
+                <button @click.prevent="submit()" class="block mr-auto mt-8 px-10 py-1 rounded-md bg-gray-500 text-lg text-white">
                     <span>Sign Me Up</span>
                 </button>
             </div>
