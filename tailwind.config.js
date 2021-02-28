@@ -35,6 +35,9 @@ module.exports = {
           1000: '#192122',
         },
         white: '#FAFAFA'
+      },
+      fontFamily: {
+        brand: ['Bebas Neue', 'sans-serif']
       }
     },
   },

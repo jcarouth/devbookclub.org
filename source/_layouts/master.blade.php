@@ -20,7 +20,9 @@
         <meta property="twitter:creator" content="@_devbookclub">
         <meta property="twitter:image" content="{{ $page->baseUrl }}/assets/images/static/{{ $page->twitter_image ?? 'devbookclub-twitter-large.png' }}">
 
+        <link rel="preconnect" href="https://fonts.gstatic.com">
         <link rel="canonical" href="{{ $page->getUrl() }}">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
 
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -51,30 +53,38 @@
         <script defer src="{{ mix('js/main.js', 'assets/build') }}"></script>
     </head>
     <body class="flex flex-col min-h-screen bg-white font-sans antialiased text-gray-800">
-        <header class="bg-gray-50">
-            <div class="container max-w-6xl mx-auto px-3 py-3 flex flex-row justify-between">
-                <a class="flex-grow" href="/">
-                    <svg class="w-48 h-12">
-                        <title>Dev Book Club</title>
-                        <use xlink:href="/assets/build/icons/spritemap.svg#sprite-wordmark-dbc"></use>
+        <header x-data="{ navOpen: false}" class="bg-gradient-to-b from-gray-900 to-gray-700 text-white">
+            <div class="container flex max-w-6xl mx-auto px-3 py-3">
+                <a class="flex-grow md:flex md:space-x-2" href="/">
+                    <svg class="w-8 h-8 fill-current">
+                        <title class="sr-only">Dev Book Club</title>
+                        <use xlink:href="/assets/build/icons/spritemap.svg#sprite-logo-solid"></use>
                     </svg>
+                    <div class="hidden md:block font-brand my-auto text-3xl tracking-wide">Dev Book Club</div>
                 </a>
-                <span class="flex-none w-12 py-2">
-                    <svg class="w-4 h-4 ml-auto fill-current hidden">
-                        <use xlink:href="/assets/build/icons/spritemap.svg#sprite-bars"></use>
+                <nav class="hidden md:flex md:flex-row space-x-6">
+                    <a class="text-sm uppercase leading-9" href="/rsvp/">RSVP</a>
+                    <a class="text-sm uppercase leading-9" href="/pages/scholarship/">Scholarship</a>
+                    <a class="text-sm uppercase leading-9" href="/pages/about/">About</a>
+                    <a class="text-sm uppercase leading-9" href="/pages/code-of-conduct/">Code of Conduct</a>
+                </nav>
+                <span @click="navOpen = !navOpen" class="my-auto md:hidden">
+                    <svg class="w-4 h-4 ml-auto fill-current">
+                        <use x-show="navOpen === false" xlink:href="/assets/build/icons/spritemap.svg#sprite-bars"></use>
+                        <use x-cloak x-show="navOpen === true" xlink:href="/assets/build/icons/spritemap.svg#sprite-times"></use>
                     </svg>
                 </span>
             </div>
+
+            <div x-cloak x-show="navOpen === true" class="px-5 py-3 flex flex-col space-y-2 text-lg">
+                <a class="text-sm uppercase" href="/rsvp/">RSVP</a>
+                <a class="text-sm uppercase" href="/pages/scholarship/">Scholarship</a>
+                <a class="text-sm uppercase" href="/pages/about/">About</a>
+                <a class="text-sm uppercase" href="/pages/code-of-conduct/">Code of Conduct</a>
+            </div>
         </header>
 
-        <nav class="py-3 bg-gradient-to-b from-gray-900 to-gray-700 text-lg text-white">
-            <div class="container max-w-6xl mx-auto px-3 flex flex-col md:flex-row space-y-1 md:space-y-0 md:space-x-6">
-                <a href="/rsvp/">RSVP</a>
-                <a href="/pages/scholarship/">Scholarship</a>
-                <a href="/pages/about/">About</a>
-                <a href="/pages/code-of-conduct/">Code of Conduct</a>
-            </div>
-        </nav>
+
 
         <main class="h-full mb-auto" role="main">
             <div class="container max-w-6xl mx-auto py-8 px-3">
