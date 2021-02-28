@@ -49,7 +49,7 @@
                 <div class="w-full px-3">
                     <div class="text-xl font-semibold">Clean Code</div>
                     <span class="font-serif">by Robert Martin</span>
-                    <div class="md:w-1/3 lg:w-2/3 mt-8 py-2 rounded-md shadow-md text-center bg-gradient-to-b from-blue-800 to-blue-600 text-white">
+                    <div class="w-2/3 md:w-1/4 lg:w-2/3 mt-8 py-2 rounded-md shadow-md text-center bg-gradient-to-b from-blue-800 to-blue-600 text-white">
                         <a href="https://www.youtube.com/playlist?list=PLH1fn6y2samt0xfBGC26-1M3pzPImN3p2">Watch on YouTube</a>
                     </div>
                 </div>
