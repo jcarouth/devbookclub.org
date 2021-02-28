@@ -55,13 +55,15 @@
     <body class="flex flex-col min-h-screen bg-white font-sans antialiased text-gray-800">
         <header x-data="{ navOpen: false}" class="bg-gradient-to-b from-gray-900 to-gray-700 text-white">
             <div class="container flex max-w-6xl mx-auto px-3 py-3">
-                <a class="flex-grow md:flex md:space-x-2" href="/">
-                    <svg class="w-8 h-8 fill-current">
-                        <title class="sr-only">Dev Book Club</title>
-                        <use xlink:href="/assets/build/icons/spritemap.svg#sprite-logo-solid"></use>
-                    </svg>
-                    <div class="hidden md:block font-brand my-auto text-3xl tracking-wide">Dev Book Club</div>
-                </a>
+                <div class="flex-grow">
+                    <a class="flex space-x-2" href="/">
+                        <svg class="w-8 h-8 fill-current">
+                            <title class="sr-only">Dev Book Club</title>
+                            <use xlink:href="/assets/build/icons/spritemap.svg#sprite-logo-solid"></use>
+                        </svg>
+                        <div class="my-auto font-brand text-3xl tracking-wide">Dev Book Club</div>
+                    </a>
+                </div>
                 <nav class="hidden md:flex md:flex-row space-x-6">
                     <a class="text-sm uppercase leading-9" href="/rsvp/">RSVP</a>
                     <a class="text-sm uppercase leading-9" href="/pages/scholarship/">Scholarship</a>
@@ -87,9 +89,7 @@
 
 
         <main class="h-full mb-auto" role="main">
-            <div class="container max-w-6xl mx-auto py-8 px-3">
-                @yield('body')
-            </div>
+            @yield('body')
         </main>
 
         <aside class="mt-10 lg:mt-24 bg-gradient-to-b from-gray-600 to-gray-900">
@@ -98,7 +98,7 @@
 
         <footer class="lg:px-3 bg-gray-900 text-white">
             <hr class="container max-w-6xl mx-auto mt-8 border-gray-500">
-            <div class="container max-w-6xl mx-auto py-8 lg:flex lg:items-center lg:justify-between space-y-6">
+            <div class="container max-w-6xl mx-auto py-8 lg:flex lg:items-center lg:justify-between space-y-6 lg:space-y-0">
                 <div class="space-x-6 flex items-center justify-center lg:order-2">
                     <a class="" href="https://twitter.com/_devbookclub" rel="noopener" target="_blank" aria-label="Follow @_devbookclub on Twitter">
                         <svg class="w-6 h-6 fill-current"><use xlink:href="/assets/build/icons/spritemap.svg#sprite-twitter"></use></svg>
@@ -107,7 +107,7 @@
                         <svg class="w-6 h-6 fill-current"><use xlink:href="/assets/build/icons/spritemap.svg#sprite-youtube"></use></svg>
                     </a>
                 </div>
-                <p class="lg:order-1 text-center lg:text-left">&copy; {{ date('Y') }} Dev Book Club. All rights reserved.</p>
+                <p class="lg:order-1 text-center lg:text-left">&copy; {{ date('Y') }} Dev Book Club. All rights reserved. A <a class="underline" href="https://twitter.com/jcarouth">Jeff Carouth</a> project.</p>
             </div>
         </footer>
     </body>
