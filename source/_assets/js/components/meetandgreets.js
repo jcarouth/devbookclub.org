@@ -4,11 +4,6 @@ window.meetandgreets = function () {
     error: false,
     events: [
       {
-        id: '20210228-1815',
-        title: 'Sunday, Feb 28',
-        time: '6:15 p.m. CT (-06:00)'
-      },
-      {
         id: '20210302-1830',
         title: 'Tuesday, Mar 2',
         time: '6:00 p.m. CT (-06:00)'
