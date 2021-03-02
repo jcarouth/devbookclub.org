@@ -49,6 +49,8 @@
 
             gtag('config', 'G-1FKR7ZQZRH');
         </script>
+
+        <script src="https://cdn.usefathom.com/script.js" data-site="BSPWFCNX" defer></script>
         @endif
         <script defer src="{{ mix('js/main.js', 'assets/build') }}"></script>
     </head>
