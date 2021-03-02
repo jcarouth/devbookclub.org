@@ -8,6 +8,9 @@ return [
     'collections' => [
         'pages' => [
             'path' => 'pages/{-slug}',
+        ],
+        'books' => [
+            'path' => 'books/{-slug}',
         ]
     ],
 ];
