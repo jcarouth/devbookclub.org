@@ -12,3 +12,8 @@ status = 301
 from = "/join/"
 to = "/rsvp/"
 status = 301
+
+[[redirects]]
+from = "/scholarship/"
+to = "/pages/scholarship/"
+status = 301
