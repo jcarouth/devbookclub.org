@@ -111,6 +111,12 @@
                     <a class="" href="https://www.youtube.com/user/devbookclub" aria-label="Subscribe to DevBookClub on YouTube" rel="noopener" target="_blank">
                         <svg class="w-6 h-6 fill-current"><use xlink:href="/assets/build/icons/spritemap.svg#sprite-youtube"></use></svg>
                     </a>
+                    <a href="https://join.slack.com/t/thedevbookclub/shared_invite/zt-myoznyjb-q3LqO5XAO1IKtx28zbk9ew" rel="noopener" aria-label="Join us on Slack">
+                        <svg class="w-6 h-6 fill-current"><use xlink:href="/assets/build/icons/spritemap.svg#sprite-slack"></use></svg>
+                    </a>
+                    <a href="https://discord.gg/U4M7ZVfM6u" rel="noopener" aria-label="Join DevBookClub on Discord">
+                        <svg class="w-6 h-6 fill-current"><use xlink:href="/assets/build/icons/spritemap.svg#sprite-discord"></use></svg>
+                    </a>
                 </div>
                 <p class="lg:order-1 text-center lg:text-left">&copy; {{ date('Y') }} Dev Book Club. All rights reserved. A <a class="underline" href="https://twitter.com/jcarouth">Jeff Carouth</a> project.</p>
             </div>
