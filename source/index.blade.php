@@ -14,11 +14,10 @@
                 <div class="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
                     <div class="max-w-3xl sm:w-3/4 lg:w-7/12 mx-auto text-white">
                         <div class="text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
-                            Meet and Greet
+                            Refactoring by Martin Fowler
                         </div>
                         <p class="mt-6 max-w-lg mx-auto text-xl sm:max-w-3xl">
-                            Before we kick off the next discussion of Refactoring by Martin Fowler, there will be a series of Meet and Greets
-                            for the group to settle on schedules and work out the kinks of the technology.
+                            Dev Book Club discussions covering Refactoring: Improving the Design of Existing Code being March 21, 2021. If you want to join the dicsussion, RSVP for an upcoming discussion now.
                         </p>
                         <div class="mt-10">
                             <a href="/rsvp/" class="inline-block px-3 py-3 sm:px-8 text-xl font-medium text-center rounded-md shadow-sm bg-white text-gray-900">
@@ -41,7 +40,9 @@
                 <div class="w-full px-3">
                     <div class="text-xl font-semibold">Refactoring (2nd Edition)</div>
                     <span class="font-serif">by Martin Fowler</span>
-                    <div class="md:w-1/3 lg:w-2/3 mt-8 py-2">Starting Soon</div>
+                    <div class="w-2/3 md:w-1/4 lg:w-2/3 mt-8 py-2 rounded-md shadow-md text-center bg-gradient-to-b from-blue-800 to-blue-600 text-white">
+                        <a href="/rsvp/">Sign Up</a>
+                    </div>
                 </div>
             </div>
             <div class="flex flex-row">

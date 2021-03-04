@@ -38,7 +38,10 @@ module.exports = {
       },
       fontFamily: {
         brand: ['Bebas Neue', 'sans-serif']
-      }
+      },
+      spacing: {
+        '18': '4.5rem',
+      },
     },
   },
   variants: {
