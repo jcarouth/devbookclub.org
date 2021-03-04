@@ -10,8 +10,9 @@
     <h1 class="mt-10 pb-3 text-3xl md:text-4xl border-b-2 border-gray-300">{{ $page->title }}</h1>
 
     <div class="max-w-3xl mt-10">
-        @yield('blah')
+        @yield('intro')
 
+        <h3 class="pb-2 border-b-2 border-gray-300">Schedule</h3>
 
         @yield('schedule')
     </div>

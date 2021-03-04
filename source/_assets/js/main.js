@@ -1,4 +1,4 @@
 const Alpine = require('alpinejs');
 
-require('./components/meetandgreets');
+require('./components/rsvp');
 require('./components/newsletter');
