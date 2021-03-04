@@ -1,5 +1,5 @@
 ---
-title: RSVP for DevBookClub Meet & Greet
+title: RSVP to a Refactoring Discussion
 description: RSVP for an upcoming DevBookClub meeting or discussion.
 ---
 @extends('_layouts.master')
@@ -9,44 +9,11 @@ description: RSVP for an upcoming DevBookClub meeting or discussion.
     <h1 class="mt-8 pb-3 text-4xl border-b-2 border-gray-300">RSVP - Meet & Greet for Refactoring Discussion Group</h1>
 
     <p class="max-w-3xl mt-10 text-xl">
-        The discussion groups for Refactoring, Improving the Design of Existing Code by Martin Fowler is going to begin soon. Because of the nature of how these discussions work -- virtual and streaming/archived -- it is imperative we are able to meet with limited technical issues. To participate you will need to ensure you are able to connect via Zoom to the group and have your audio under control. To facilitate figuring this all out, we will have a few "Meet & Greet" Zoom meetings available. If yo want to participate and would like an opportunity to meet other participants, RSVP to one or more of the meetings below.
+        The discussion groups for Refactoring, Improving the Design of Existing Code by Martin Fowler is going to begin soon. These discussions will take place via Zoom and be recorded to post on our YouTube channel. RSVP form coming soon.
     </p>
 
     <p class="max-w-3xl mt-10 text-xl">
-        Don't forget to sign up for the mailing list (and <a class="underline" href="https://twitter.com/_devbookclub" aria-label="">follow @_devbookclub on Twitter</a>) to get notifications for upcoming discussion groups.
+        <a href="https://join.slack.com/t/thedevbookclub/shared_invite/zt-myoznyjb-q3LqO5XAO1IKtx28zbk9ew" rel="noopener" aria-label="thedevbookclub.slack.com">Join us on Slack</a> and <a class="" href="https://twitter.com/_devbookclub" rel="noopener" target="_blank" aria-label="Follow @_devbookclub on Twitter">follow us on Twitter (@_devbookclub)</a> to ensure you get notified about upcoming discussions.
     </p>
-
-    <div x-data="meetandgreets()" class="mt-10">
-        <form x-ref="meetandgreetsForm" name="meetandgreets-rsvps" data-netlify="true" method="post" action="/pages/thanks/">
-            <label>Name: *</label>
-            <input x-model="name" class="block w-full lg:w-1/2 mt-1 px-2 py-1 border border-gray-900" type="text" name="name" required>
-
-            <label class="block mt-8">Email: *</label>
-            <input x-model="email" class="block w-full lg:w-1/2 mt-1 px-2 py-1 border border-gray-900" type="email" name="email" required>
-
-            <label class="block mt-8">Select at least 1 date/time:</label>
-            <div class="space-y-4">
-                <template x-for="event in events">
-                <div @click="toggleEvent(event.id)" class="flex items-center">
-                    <div class="w-8 h-8 mr-3 border-2">
-                        <svg x-show="eventSelected(event.id)" class="w-6 h-6 mx-auto fill-current"><use xlink:href="/assets/build/icons/spritemap.svg#sprite-check"></use></svg>
-                    </div>
-                    <div class="">
-                        <div class="font-bold text-2xl" x-text="event.title"></div>
-                        <span class="block text-sm" x-text="event.time"></span>
-                    </div>
-                </div>
-                </template>
-                <input x-model="selectedEvents" type="hidden" name="events">
-            </div>
-
-            <div class="mt-8">
-                <div x-cloak x-show="resultText != ''" x-text="resultText" :class="{'text-red-500': error}" class="mt-8"></div>
-                <button @click.prevent="submit()" class="block mr-auto mt-8 px-10 py-1 rounded-md bg-gray-500 text-lg text-white">
-                    <span>Sign Me Up</span>
-                </button>
-            </div>
-        </form>
-    </div>
-    </div>
+</div>
 @endsection
