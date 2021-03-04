@@ -17,7 +17,7 @@
                             Refactoring by Martin Fowler
                         </div>
                         <p class="mt-6 max-w-lg mx-auto text-xl sm:max-w-3xl">
-                            Dev Book Club discussions covering Refactoring: Improving the Design of Existing Code being March 21, 2021. If you want to join the dicsussion, RSVP for an upcoming discussion now.
+                            The Dev Book Club is currently reading Refactoring: Improving the Design of Existing Code by Martin Fowler (Second Edition.) Join the conversation by submitting your RSVP now.
                         </p>
                         <div class="mt-10">
                             <a href="/rsvp/" class="inline-block px-3 py-3 sm:px-8 text-xl font-medium text-center rounded-md shadow-sm bg-white text-gray-900">

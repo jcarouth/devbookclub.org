@@ -9,12 +9,16 @@ banner_image: refactoring-second-banner.png
 ---
 @section('intro')
 <p>
-    The Dev Book Club is going to do a group reading and discussion of Refactoring: Improving the Design of Existing Code (Second Edition) by Martin Fowler. Because of the nature of this book we are going to approach it in two units: the first will cover the first four chapters making up the foundational material for refactoring while the second will cover the refactoring catalog.
+    The Dev Book Club will read and discuss Refactoring: Improving the Design of Existing Code (Second Edition) by Martin Fowler in 2021. Because of the nature of this book we are going to approach it in two units: the first will cover the first four chapters making up the foundational material for refactoring while the second will cover the refactoring catalog.
 </p>
 
     <p>
        The schedule below outlines each chapter we will discuss. Times are in America/Chicago timezone. Note it is not necessary for you to attend all discussions to participate. You are welcome to attend as your schedule allows.
     </p>
+
+    <div class="w-2/3 md:w-1/4 lg:w-2/3 mx-auto mt-8 py-2 rounded-md shadow-md text-center bg-gradient-to-b from-blue-800 to-blue-600 text-white">
+        <a class="block" href="/rsvp/"><span class="text-2xl">Reserve your spot in the conversation &gt;</span></a>
+    </div>
 @endsection
 
 @section('schedule')

@@ -9,14 +9,14 @@ description: RSVP for an upcoming DevBookClub meeting or discussion.
     <h1 class="mt-8 pb-3 text-4xl border-b-2 border-gray-300">RSVP - Refactoring Discussion Group</h1>
 
     <p class="max-w-3xl mt-10 text-xl">
-        The discussion groups for Refactoring, Improving the Design of Existing Code by Martin Fowler is going to begin soon. These discussions will take place via Zoom and be recorded to post on our YouTube channel. RSVP form coming soon.
+        The discussion group for Refactoring: Improving the Design of Existing Code by Martin Fowler will begin soon. These discussions will take place via Zoom and be recorded to post on our YouTube channel. RSVP below to get invited to the Zoom call and participate!
     </p>
 
     <p class="max-w-3xl mt-10 text-xl">
         <a href="https://join.slack.com/t/thedevbookclub/shared_invite/zt-myoznyjb-q3LqO5XAO1IKtx28zbk9ew" rel="noopener" aria-label="thedevbookclub.slack.com">Join us on Slack</a> and <a class="" href="https://twitter.com/_devbookclub" rel="noopener" target="_blank" aria-label="Follow @_devbookclub on Twitter">follow us on Twitter (@_devbookclub)</a> to ensure you get notified about upcoming discussions.
     </p>
 
-    <h2 class="mt-10">Submit Your RSVP</h2>
+    <h2 class="mt-12 pb-2 text-2xl border-b-2 border-gray-100">Submit Your RSVP</h2>
 
     <div class="mt-10">
         <form x-data="rsvp()" name="rsvps-refactoring" data-netlify="true" method="post" action="/pages/thanks/">
