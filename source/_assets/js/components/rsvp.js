@@ -54,7 +54,7 @@ window.rsvp = function () {
         time: 'May 30, 2021 6:15pm (-0500)'
       },
       {
-        id: '20210302-1830',
+        id: '202106061815',
         title: 'Chapter 12: Dealing with Inheritance',
         time: 'June 6, 2021 6:15pm (-0500)'
       },
