@@ -41,6 +41,12 @@
 
         @if ($page->production)
         <script src="https://cdn.usefathom.com/script.js" data-site="BSPWFCNX" defer></script>
+        @else
+        <script>
+            window.fathom = {
+                trackGoal(goal, value) { console.log(`Fathom goal track goal:${goal} value:${value}`); },
+            }
+        </script>
         @endif
         <script defer src="{{ mix('js/main.js', 'assets/build') }}"></script>
     </head>
@@ -80,8 +86,6 @@
                 <a class="text-sm uppercase" href="/pages/code-of-conduct/">Code of Conduct</a>
             </div>
         </header>
-
-
 
         <main class="h-full mb-auto" role="main">
             @yield('body')
