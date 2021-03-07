@@ -101,7 +101,7 @@
             @include('_components.newsletter-inline')
         </aside>
 
-        <footer class="lg:px-3 bg-gray-900 text-white">
+        <footer class="px-3 bg-gray-900 text-white">
             <hr class="container max-w-6xl mx-auto mt-8 border-gray-500">
             <div class="container max-w-6xl mx-auto py-8 lg:flex lg:items-center lg:justify-between space-y-6 lg:space-y-0">
                 <div class="space-x-6 flex items-center justify-center lg:order-2">
@@ -118,7 +118,7 @@
                         <svg class="w-6 h-6 fill-current"><use xlink:href="/assets/build/icons/spritemap.svg#sprite-discord"></use></svg>
                     </a>
                 </div>
-                <p class="lg:order-1 text-center lg:text-left">&copy; {{ date('Y') }} Dev Book Club. All rights reserved. A <a class="underline" href="https://twitter.com/jcarouth">Jeff Carouth</a> project.</p>
+                <p class="lg:order-1 text-center lg:text-left">&copy; {{ date('Y') }} Dev Book Club. All rights reserved. A <a class="underline" href="https://twitter.com/jcarouth">Jeff Carouth</a> project. <a class="underline" href="/pages/privacy-policy/">Privacy policy</a>.</p>
             </div>
         </footer>
     </body>
