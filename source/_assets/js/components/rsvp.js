@@ -83,7 +83,6 @@ window.rsvp = function () {
         if (r.ok) {
           self.resultText = 'RSVP received, see you then!';
           self.reset();
-          window.fathom.trackGoal('D4YPPT1M', 0);
         } else {
           self.resultText = 'Could not submit RSVP. Please try again.';
           self.error = true;
