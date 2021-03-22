@@ -4,11 +4,6 @@ window.rsvp = function () {
     error: false,
     events: [
       {
-        id: '202103211815',
-        title: 'Chapter 1: Refactoring: A First Example',
-        time: 'March 21, 2021 6:15pm CT (-05:00)'
-      },
-      {
         id: '202103281815',
         title: 'Chapter 2: Principles in Refactoring',
         time: 'March 28, 2021 6:15pm (-0500)'
