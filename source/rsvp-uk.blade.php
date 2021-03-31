@@ -6,10 +6,10 @@ description: RSVP for an upcoming DevBookClub meeting or discussion.
 
 @section('body')
 <div class="md-content max-w-6xl mx-auto px-3">
-    <h1 class="mt-8 pb-3 text-4xl border-b-2 border-gray-300">RSVP - Refactoring - US/Canada Group</h1>
+    <h1 class="mt-8 pb-3 text-4xl border-b-2 border-gray-300">RSVP - Refactoring - UK/EU Group</h1>
 
     <p class="max-w-3xl mt-10 text-xl">
-        Discussions covering Refactoring: Improving the Design of Existing Code by Martin Fowler are underway. This page is for the group based in the US. For times that might work better in the UK or EU please see the <a href="/rsvp-uk/">RSVP page for the UK-based group</a>.
+        Discussions covering Refactoring: Improving the Design of Existing Code by Martin Fowler are underway. This page is for the group based in the UK. For times that might work better in the US and Canada please see the <a href="/rsvp/">RSVP page for the US-based group</a>.
     </p>
 
     <p class="max-w-3xl mt-10 text-xl">
@@ -21,55 +21,65 @@ description: RSVP for an upcoming DevBookClub meeting or discussion.
     <script>
         const discussions = [
             {
-                id: '20210411815',
+                id: '202104122000',
+                title: 'Chapter 1: Refactoring, a First Example',
+                time: '12 April 2021 8pm BST'
+            },
+            {
+                id: '202104192000',
+                title: 'Chapter 2: Principles in Refactoring',
+                time: '19 April 2021 8pm BST'
+            },
+            {
+                id: '202104262000',
                 title: 'Chapter 3: Bad Smells in Code',
-                time: 'April 11, 2021 6:15pm (-0500)'
+                time: '26 April 2021 8pm BST'
             },
             {
-                id: '202104181815',
+                id: '202105032000',
                 title: 'Chapter 4: Building Tests & Chapter 5: Introducing the Catalog',
-                time: 'April 18, 2021 6:15pm (-0500)'
+                time: '3 May 2021 8pm BST'
             },
             {
-                id: '202104251815',
+                id: '202105102000',
                 title: 'Chapter 6: A First Set of Refactorings',
-                time: 'April 25, 2021 6:15pm (-0500)'
+                time: '10 May 2021 8pm BST'
             },
             {
-                id: '202105021815',
+                id: '202105172000',
                 title: 'Chapter 7: Encapsulation',
-                time: 'May 2, 2021 6:15pm (-0500)'
+                time: '17 May 2021 8pm BST'
             },
             {
-                id: '202105091815',
+                id: '202105242000',
                 title: 'Chapter 8: Moving Features',
-                time: 'May 9, 2021 6:15pm (-0500)'
+                time: '24 May 2021 8pm BST'
             },
             {
-                id: '202105161815',
+                id: '202105312000',
                 title: 'Chapter 9: Organizing Data',
-                time: 'May 16, 2021 6:15pm (-0500)'
+                time: '31 May 2021 8pm BST'
             },
             {
-                id: '202105231815',
+                id: '202106072000',
                 title: 'Chapter 10: Simplifying Conditional Logic',
-                time: 'May 23, 2021 6:15pm (-0500)'
+                time: '7 June 2021 8pm BST'
             },
             {
-                id: '202105301815',
+                id: '202106142000',
                 title: 'Chapter 11: Refactoring APIs',
-                time: 'May 30, 2021 6:15pm (-0500)'
+                time: '14 June 2021 8pm BST'
             },
             {
-                id: '202106061815',
+                id: '202106212000',
                 title: 'Chapter 12: Dealing with Inheritance',
-                time: 'June 6, 2021 6:15pm (-0500)'
+                time: '21 June 2021 8pm BST'
             },
+
         ]
     </script>
-
     <div class="mt-10">
-        <form x-data="rsvp()" x-init="init(discussions)" name="rsvps-refactoring" data-netlify="true" method="post" action="/pages/thanks/">
+        <form x-data="rsvp()" x-init="init(discussions)" name="rsvps-refactoring-uk" data-netlify="true" method="post" action="/pages/thanks/">
             <label>Name: *</label>
             <input x-model="name" class="block w-full lg:w-1/2 mt-1 px-2 py-1 border border-gray-900" type="text" name="name" required>
 
