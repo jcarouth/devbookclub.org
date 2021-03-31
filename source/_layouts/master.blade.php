@@ -64,8 +64,8 @@
                 </div>
                 <div class="flex-grow">
                     <nav class="hidden md:flex md:flex-row justify-end space-x-6">
-                        <a class="text-sm uppercase leading-9" href="/rsvp/">RSVP</a>
-                        <a class="text-sm uppercase leading-9" href="/pages/scholarship/">Scholarship</a>
+                        <a class="text-sm uppercase leading-9" href="/rsvp/">RSVP US/CA</a>
+                        <a class="text-sm uppercase leading-9" href="/rsvp-uk/">RSVP UK/EU</a>
                         <a class="text-sm uppercase leading-9" href="/pages/about/">About</a>
                         <a class="text-sm uppercase leading-9" href="/pages/code-of-conduct/">Code of Conduct</a>
                     </nav>
@@ -79,9 +79,9 @@
 
             </div>
 
-            <div x-cloak x-show="navOpen === true" class="px-5 py-3 flex flex-col space-y-2 text-lg">
-                <a class="text-sm uppercase" href="/rsvp/">RSVP</a>
-                <a class="text-sm uppercase" href="/pages/scholarship/">Scholarship</a>
+            <div x-cloak x-show="navOpen === true" class="px-5 py-3 flex flex-col md:hidden space-y-2 text-lg">
+                <a class="text-sm uppercase" href="/rsvp/">RSVP US/CA</a>
+                <a class="text-sm uppercase" href="/rsvp-uk/">RSVP UK/EU</a>
                 <a class="text-sm uppercase" href="/pages/about/">About</a>
                 <a class="text-sm uppercase" href="/pages/code-of-conduct/">Code of Conduct</a>
             </div>

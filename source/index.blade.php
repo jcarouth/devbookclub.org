@@ -19,9 +19,12 @@
                         <p class="mt-6 max-w-lg mx-auto text-xl sm:max-w-3xl">
                             The Dev Book Club is currently reading Refactoring: Improving the Design of Existing Code by Martin Fowler (Second Edition.) Join the conversation by submitting your RSVP now.
                         </p>
-                        <div class="mt-10">
+                        <div class="mt-10 flex flex-row space-x-10">
                             <a href="/rsvp/" class="inline-block px-3 py-3 sm:px-8 text-xl font-medium text-center rounded-md shadow-sm bg-white text-gray-900">
-                                Reserve Your Spot
+                                Reserve Your Spot US/CA
+                            </a>
+                            <a href="/rsvp-uk/" class="inline-block px-3 py-3 sm:px-8 text-xl font-medium text-center rounded-md shadow-sm bg-white text-gray-900">
+                                Reserve Your Spot UK/EU
                             </a>
                         </div>
                     </div>
@@ -41,7 +44,7 @@
                     <div class="text-xl font-semibold">Refactoring (2nd Edition)</div>
                     <span class="font-serif">by Martin Fowler</span>
                     <div class="w-2/3 md:w-1/4 lg:w-2/3 mt-8 py-2 rounded-md shadow-md text-center bg-gradient-to-b from-blue-800 to-blue-600 text-white">
-                        <a href="/rsvp/">Sign Up</a>
+                        <a href="https://youtube.com/playlist?list=PLH1fn6y2samvyaQW5NvQzGUfR5TOIOw5T">Watch on YouTube</a>
                     </div>
                 </div>
             </div>
