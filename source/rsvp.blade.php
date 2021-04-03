@@ -9,7 +9,7 @@ description: RSVP for an upcoming DevBookClub meeting or discussion.
     <h1 class="mt-8 pb-3 text-4xl border-b-2 border-gray-300">RSVP - Refactoring - US/Canada Group</h1>
 
     <p class="max-w-3xl mt-10 text-xl">
-        Discussions covering Refactoring: Improving the Design of Existing Code by Martin Fowler are underway. This page is for the group based in the US. For times that might work better in the UK or EU please see the <a href="/rsvp-uk/">RSVP page for the UK-based group</a>.
+        If you would like to join online discussions on Refactoring: Improving the Design of Existing Code by Martin Fowler please use the form below to indicate your interest. For discussion times for European timezones please see the <a href="/rsvp-uk/">RSVP page for the UK-based group</a>.
     </p>
 
     <p class="max-w-3xl mt-10 text-xl">
