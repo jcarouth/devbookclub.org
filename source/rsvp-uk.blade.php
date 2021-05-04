@@ -21,11 +21,6 @@ description: RSVP for an upcoming DevBookClub meeting or discussion.
     <script>
         const discussions = [
             {
-                id: '202105032000',
-                title: 'Chapter 4: Building Tests & Chapter 5: Introducing the Catalog',
-                time: '3 May 2021 8pm BST'
-            },
-            {
                 id: '202105102000',
                 title: 'Chapter 6: A First Set of Refactorings',
                 time: '10 May 2021 8pm BST'
